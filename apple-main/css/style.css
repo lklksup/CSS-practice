@@ -1,0 +1,203 @@
+
+/*广告*/
+	.ad-wrapper{
+		background-color: #444;
+	}
+	.ad{
+		color: #a8a8aa;
+		font-size: 12px;
+		max-width: 976px;
+		margin: 0 auto;
+		height: 40px;
+		line-height: 40px;
+		text-align: right;
+		
+	}
+
+/*导航*/
+	nav{
+		width: 100%;
+		background-color: rgba(0,0,0,0.8);
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
+	nav .nav-wrapper{
+		width: 980px;
+		margin: 0 auto;
+		font-size: 1.4em;	
+	}
+	.nav-wrapper ul{
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav-wrapper ul li{
+		height: 44px;
+		line-height: 44px;
+		padding-right:2em;
+	}
+	.nav-wrapper ul li a:hover{
+		opacity: 0.65;
+	}
+	nav .phone{
+		display: none;
+	}
+	nav .phone ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 20px;
+		line-height: 44px;
+	}
+	nav .phone ul li{
+		padding: 0;
+		font-size: 1.5em;
+		color: #fff;
+	}
+	
+	#icon-list .fa-close{
+		font-size: 1.5em;
+		margin-left: 22px;
+		cursor: pointer;
+	}
+/*banner*/
+	.banner{
+		max-width: 2560px;
+		height:725px;
+		margin:0 auto;
+		background-color: #fafafa;
+		text-align: center;
+		border-bottom: 20px solid #fff;
+	}
+	.banner > h1{
+		color: #222222;
+		font-size: 5em;
+		padding-top: 1.8em;
+	}
+	.banner > p{
+		color: #222222;
+		font-size: 2.4em;
+	}
+	.banner > a{
+		display: inline-block;
+		color: #0070c9;
+		margin: 1em;
+		font-size: 1.8em;
+	}
+	.banner > a::after{
+		content: " > ";
+	}
+	.banner > a:hover{
+		text-decoration: underline;
+	}
+	.first .big-img{
+		background: url(../images/1.png) no-repeat center;
+		height: 337px;
+		width:100%;
+	}
+	.second{
+		background-color: #f5f5f5;
+	}
+	.second .big-img{
+		background: url(../images/2.jpg) no-repeat center;
+		height: 337px;
+		width:100%;
+		margin-top: 5em;
+	}
+	.third{
+		background-color: #131218;
+	}
+	.third > h1,.third > p,.third > a{
+		color: #fff;
+	}
+	.third .big-img{
+		background: url(../images/3.jpg) no-repeat center;
+		background-size: 100%;
+		height: 337px;
+		width:100%;
+		margin-top: 10em;
+	}
+	 /* 小banner  */
+	.small{
+		max-width: 2560px;
+		margin: 0 auto;
+	}
+	.small ul{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;	
+		text-align: center;
+	}
+	.small ul li{
+		width: 50%;
+		box-sizing: border-box;
+		border: 6px solid #fff;
+	}
+	.small h3{
+		font-size: 3.5em;
+		padding-top: 1em;
+	}
+	.small p{
+		font-size: 2em;
+		padding-top: 5px;
+	}
+	/*第一个*/
+	.one{
+		background: url(../images/college.jpg) no-repeat center;
+		height: 580px;
+	}
+	/*第二个*/
+	.two{
+		background: url(../images/behind.jpg) no-repeat center;
+		height: 580px;
+		color: #ffffff;
+	}
+	.two h3{
+		padding: 13em 0 .5em 0;
+	}
+	.two a, .three a{
+		font-size: 1.8em;
+		padding:.5em;
+	}
+	.small a::after{
+		content: " > ";
+	}
+	/*第三个*/
+	.three{
+		background: url(../images/drgon.jpg) no-repeat center;
+		height: 580px;
+		color: #fff;
+	}
+	.three h3{
+		padding: 12em 0 .3em 0;
+	}
+	.three p,
+	.four p{
+		padding-bottom: .5em;
+	}
+	/*第四个*/
+	.four{
+		background: url(../images/iphone8.jpg) no-repeat center bottom;
+		height: 580px;
+		background-color: #f9f0eb;
+	}
+	.four a{
+		color: #0070c9;
+		font-size: 1.8em;
+		padding:.5em;
+	}
+	/*第五个*/
+	.five{
+		background: url(../images/new.jpg) no-repeat center;
+		height: 580px;
+	}
+
+	/*第六个*/	
+	.six{
+		background: url(../images/macos.jpg) no-repeat center bottom;
+		height: 580px;
+		background-color: #000;
+		color: #fff;
+	}
+
