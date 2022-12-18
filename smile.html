@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smile</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100vh;
+            min-height: 100vh;
+            background: #091921;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="c1"></canvas>
+    <script>
+        var c1 = document.getElementById("c1");
+        var ctx = c1.getContext("2d");
+        drawArc(75, 75, 50, 0, Math.PI * 2, "yellow")
+        drawArc(75, 75, 35, 0, Math.PI, "red")
+        drawArc(60, 50, 5, 0, Math.PI * 2, "black")
+        drawArc(90, 50, 5, 0, Math.PI * 2, "black")
+        function drawArc(x, y, r, b, e, color) {
+            ctx.beginPath();
+            ctx.arc(x, y, r, b, e)
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.closePath();
+            ctx.stroke()
+        }
+    </script>
+</body>
+
+</html>
