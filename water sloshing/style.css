@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+}
+
+.bottle {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    position: relative;
+    animation: animate linear 2s infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0);
+        filter: hue-rotate(360deg)
+    }
+}
+
+.bottle::before {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 60px;
+    background-color: #505250;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    transform: translate(-50%);
+    box-shadow: 0 10px 5px #000;
+}
+
+.water {
+    background: #41c1fb;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    right: 10px;
+    bottom: 10px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    animation: animates linear 2s infinite;
+    transform-origin: top center;
+    filter: drop-shadow(0 0 80px #41c1fb);
+}
+
+@keyframes animates {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+.water::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-color: #0da2e7;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+}
+/* OMG 竟然这么丑 */
