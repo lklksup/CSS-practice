@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.blank2 {
+    position: absolute;
+    width: 90px;
+    height: 450px;
+    background-color: #d8d8d8;
+    outline: 1px solid red;
+}
+
+.blank2:before {
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 90px;;
+    margin-left: -180px;
+    margin-top: 180px;
+    background-color: #d8d8d8;
+    outline: 1px solid red;
+}
+
+.blank2:after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 175px;
+    background-color: #d8d8d8;
+}
